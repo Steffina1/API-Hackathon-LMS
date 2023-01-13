@@ -37,7 +37,7 @@
 		</plugins>
 
 	</build>
-	
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -101,6 +101,12 @@
 		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.11.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -115,6 +121,17 @@
 			<version>1.0.6</version>
 			<scope>provided</scope>
 		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+
+
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple , read data from json file-->
 		<dependency>
@@ -214,5 +231,4 @@
 		</dependency>
 
 	</dependencies>
-
 </project>

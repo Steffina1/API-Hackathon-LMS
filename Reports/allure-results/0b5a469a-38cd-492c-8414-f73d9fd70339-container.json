@@ -1,0 +1,1 @@
+{"uuid":"0b5a469a-38cd-492c-8414-f73d9fd70339","name":"Scenario Outline: Test if user is able to get batch by name when sending valid request","children":["24e985ee-110b-4c04-b0b4-a4e565e292a0"],"befores":[],"afters":[],"start":1673897118847,"stop":1673897118864}

@@ -1,0 +1,1 @@
+{"uuid":"195ea477-307b-4c63-8acd-07fff9cb58e5","name":"Scenario Outline: Test if user is able to get all batches when sending invalid request","children":["a62875f0-6b38-4451-8908-6df44af0b826"],"befores":[],"afters":[],"start":1673897118548,"stop":1673897118571}

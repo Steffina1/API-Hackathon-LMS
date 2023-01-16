@@ -1,0 +1,1 @@
+{"uuid":"236e3e6b-bc3a-430f-b368-24763a1b3a88","name":"Scenario: Test if user is able to get batch by name when sending invalid endpoint","children":["fa8a81cc-8919-42e9-a905-cca28f4f5233"],"befores":[],"afters":[],"start":1673897118965,"stop":1673897118976}

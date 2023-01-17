@@ -282,7 +282,22 @@ public class CreateProgram extends BaseClass {
 	@When("User able to save program without required fields entity")
 	public void user_able_to_save_program_without_required_fields_entity() throws Exception {
 
-		readDatastatuscode400();
+		rownum = com.nn.api.utils.ExcelUtils.getRowCount(baseprogramExcelPath, "statuscode400");
+		colnum = com.nn.api.utils.ExcelUtils.getCellCount(baseprogramExcelPath, "statuscode400", 1);
+
+		System.out.println("row count:"+rownum);
+		System.out.println("col count:"+colnum);
+
+		String[][] progamData = new String[rownum][colnum];
+
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0; j<colnum; j++) {
+
+				progamData[i-1][j] = com.nn.api.utils.ExcelUtils.getCellData(baseprogramExcelPath, "statuscode400", i, j); //i =1, j=0 --> first cell value
+
+			}
+		}
 		JSONObject params = new JSONObject();
 		for (String[] row : progamData) {
 			params.put("programName", row[0]);
@@ -305,7 +320,22 @@ public class CreateProgram extends BaseClass {
 
 	@Then("User sends request body with Program status as random value")
 	public void user_sends_request_body_with_program_status_as_random_value() throws Exception {
-		readDatastatuscode400();
+		rownum = com.nn.api.utils.ExcelUtils.getRowCount(baseprogramExcelPath, "statuscode400");
+		colnum = com.nn.api.utils.ExcelUtils.getCellCount(baseprogramExcelPath, "statuscode400", 1);
+
+		System.out.println("row count:"+rownum);
+		System.out.println("col count:"+colnum);
+
+		String[][] progamData = new String[rownum][colnum];
+
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0; j<colnum; j++) {
+
+				progamData[i-1][j] = com.nn.api.utils.ExcelUtils.getCellData(baseprogramExcelPath, "statuscode400", i, j); //i =1, j=0 --> first cell value
+
+			}
+		}
 		JSONObject params = new JSONObject();
 		for (String[] row : progamData) {
 			params.put("programName", row[0]);
@@ -333,7 +363,22 @@ public class CreateProgram extends BaseClass {
 
 	@When("User sends request with Creation Time as invalid format")
 	public void user_sends_request_with_creation_time_as_invalid_format() throws Exception {
-		readDatastatuscode400();
+		rownum = com.nn.api.utils.ExcelUtils.getRowCount(baseprogramExcelPath, "statuscode400");
+		colnum = com.nn.api.utils.ExcelUtils.getCellCount(baseprogramExcelPath, "statuscode400", 1);
+
+		System.out.println("row count:"+rownum);
+		System.out.println("col count:"+colnum);
+
+		String[][] progamData = new String[rownum][colnum];
+
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0; j<colnum; j++) {
+
+				progamData[i-1][j] = com.nn.api.utils.ExcelUtils.getCellData(baseprogramExcelPath, "statuscode400", i, j); //i =1, j=0 --> first cell value
+
+			}
+		}
 		JSONObject params = new JSONObject();
 		for (String[] row : progamData) {
 			params.put("programName", row[0]);
@@ -356,7 +401,22 @@ public class CreateProgram extends BaseClass {
 
 	@Then("User sends request body with Creation Time as invalid format")
 	public void user_sends_request_body_with_creation_time_as_invalid_format() throws Exception {
-		readDatastatuscode400();
+		rownum = com.nn.api.utils.ExcelUtils.getRowCount(baseprogramExcelPath, "statuscode400");
+		colnum = com.nn.api.utils.ExcelUtils.getCellCount(baseprogramExcelPath, "statuscode400", 1);
+
+		System.out.println("row count:"+rownum);
+		System.out.println("col count:"+colnum);
+
+		String[][] progamData = new String[rownum][colnum];
+
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0; j<colnum; j++) {
+
+				progamData[i-1][j] = com.nn.api.utils.ExcelUtils.getCellData(baseprogramExcelPath, "statuscode400", i, j); //i =1, j=0 --> first cell value
+
+			}
+		}
 		JSONObject params = new JSONObject();
 		for (String[] row : progamData) {
 			params.put("programName", row[0]);
@@ -379,7 +439,22 @@ public class CreateProgram extends BaseClass {
 
 	@When("User able to save program with null values")
 	public void user_able_to_save_program_with_null_values() throws Exception {
-		readDatastatuscode400();
+		rownum = com.nn.api.utils.ExcelUtils.getRowCount(baseprogramExcelPath, "statuscode400");
+		colnum = com.nn.api.utils.ExcelUtils.getCellCount(baseprogramExcelPath, "statuscode400", 1);
+
+		System.out.println("row count:"+rownum);
+		System.out.println("col count:"+colnum);
+
+		String[][] progamData = new String[rownum][colnum];
+
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0; j<colnum; j++) {
+
+				progamData[i-1][j] = com.nn.api.utils.ExcelUtils.getCellData(baseprogramExcelPath, "statuscode400", i, j); //i =1, j=0 --> first cell value
+
+			}
+		}
 		JSONObject params = new JSONObject();
 		for (String[] row : progamData) {
 			params.put("programName", row[0]);
@@ -401,7 +476,7 @@ public class CreateProgram extends BaseClass {
 	}
 
 	@Then("Validate response body with error code {string} and error message")
-	public void validate_response_body_with_error_code_and_error_message(String string) {
+	public void validate_response_body_with_error_code_and_error_message(String errormessage) {
 
 		String responsebody = response.getBody().asString();
 		System.out.println("Response body:" + responsebody);

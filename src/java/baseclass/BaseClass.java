@@ -51,7 +51,7 @@ public class BaseClass {
 	
 	public void readBatchesDataForStatusCode201() throws Exception {
 		
-		
+		//generating log
 		logger.info("Read data from Excel");
 		rownum = com.nn.api.utils.ExcelUtils.getRowCount(basebatchesExcelpath, "batchdata");
 		colnum = com.nn.api.utils.ExcelUtils.getCellCount(basebatchesExcelpath, "batchdata", 1);

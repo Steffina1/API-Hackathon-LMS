@@ -28,8 +28,8 @@ public class UpdateProgramByName {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("Validate programName,programDescription,programStatus"
-	public void Validate_programName_programDescription_programStatus {
+	@Then("Validate programName,programDescription,programStatus")
+	public void Validate_programName_programDescription_programStatus() {
 		System.out.println("=========Responsebody in POST Request=========");
 		//Response body validation
 		Assert.assertTrue(responsebody!=null);//check response body not equal to null
@@ -60,7 +60,7 @@ public class UpdateProgramByName {
 		String lastModTime = response.jsonPath().getString("lastModTime");
 		Assert.assertEquals(responsebody.contains(lastModTime),true);
 }
-	}
+	
 
 	@When("User sends request body with a valid endpoint to update Program name")
 	public void user_sends_request_body_with_a_valid_endpoint_to_update_program_name() {

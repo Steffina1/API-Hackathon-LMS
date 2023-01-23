@@ -1,4 +1,4 @@
-package com.lmshackathon.testrun;
+package testrun;
 
 public class Testallure {
 
